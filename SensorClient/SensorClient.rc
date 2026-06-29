@@ -1,0 +1,305 @@
+//Script de ressources généré par Microsoft Visual C++.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Généré à partir de la ressource TEXTINCLUDE 2.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+	"#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+	"LANGUAGE 12, 1\r\n"
+	"#pragma code_page(1252)\r\n"
+	"#include ""res\\SensorClient.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+	"#include ""l.FRA\\afxres.rc""  	// Composants standard\r\n"
+	"#endif\r\n"
+	"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icône
+//
+
+// L'icône avec la valeur d'ID la plus basse est placée en premier afin que l'icône d'application
+// soit cohérente sur tous les systèmes.
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+IDR_MAINFRAME           ICON         "res\\SensorClient.ico"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Image bitmap
+//
+
+IDR_MAINFRAME           BITMAP      "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Barre d'outils
+//
+
+IDR_MAINFRAME TOOLBAR   16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+	SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+	SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+	POPUP "&Fichier"
+	BEGIN
+		MENUITEM "&quitter",                       ID_APP_EXIT
+	END
+	POPUP "&Edition"
+	BEGIN
+		MENUITEM "&Annuler\tCtrl+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "&Couper\tCtrl+X",                ID_EDIT_CUT
+		MENUITEM "C&opier\tCtrl+C",               ID_EDIT_COPY
+		MENUITEM "Co&ller\tCtrl+V",              ID_EDIT_PASTE
+	END
+	POPUP "&Affichage"
+	BEGIN
+		MENUITEM "&barre d'outils",                    ID_VIEW_TOOLBAR
+		MENUITEM "&barre d'état",                 ID_VIEW_STATUS_BAR
+	END
+	POPUP "&Aide"
+	BEGIN
+		MENUITEM "&À propos de SensorClient...",          ID_APP_ABOUT
+	END
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accélérateur
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+	"P",            ID_EDIT_COPY,           VIRTKEY,CONTROL,NOINVERT
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL,NOINVERT
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT,NOINVERT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT,NOINVERT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY ,NOINVERT
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT,NOINVERT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL,NOINVERT
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT,NOINVERT
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL,NOINVERT
+	"e",            ID_EDIT_UNDO,           VIRTKEY,CONTROL,NOINVERT
+END
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Boîte de dialogue
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "À propos de SensorClient"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "SensorClient, version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2026",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+        BLOCK "040c04e4"
+		BEGIN
+            VALUE "CompanyName", "TODO : <Nom de la société>"
+            VALUE "FileDescription", "TODO : <Description de fichier>"
+			VALUE "FileVersion",     "1.0.0.1"
+			VALUE "InternalName",    "SensorClient.exe"
+            VALUE "LegalCopyright", "TODO : (c) <Nom de la société>. Tous droits réservés."
+			VALUE "OriginalFilename","SensorClient.exe"
+            VALUE "ProductName", "TODO : <Nom du produit>"
+			VALUE "ProductVersion",  "1.0.0.1"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x040c, 1252
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Table de chaînes
+//
+
+STRINGTABLE
+BEGIN
+// Pour les applications cibles non-Macintosh, les deux sous-chaînes supplémentaires sont supprimées
+	IDR_MAINFRAME           "SensorClient"
+END
+STRINGTABLE
+BEGIN
+	AFX_IDS_APP_TITLE       "SensorClient"
+	AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+STRINGTABLE
+BEGIN
+	ID_INDICATOR_EXT        "EXT"
+	ID_INDICATOR_CAPS       "CAP"
+	ID_INDICATOR_NUM        "NUM"
+	ID_INDICATOR_SCRL       "SCRL"
+	ID_INDICATOR_OVR        "OVR"
+	ID_INDICATOR_REC        "REC"
+END
+STRINGTABLE
+BEGIN
+	ID_APP_ABOUT            "Affiche des informations concernant le programme, le numéro de version et le copyright\nÀ propos de"
+	ID_APP_EXIT             "Quitte l'application et demande si les documents doivent être enregistrés\nQuitter"
+	ID_NEXT_PANE            "Bascule vers le volet de fenêtre suivant\nVolet suivant"
+	ID_PREV_PANE            "Bascule vers le volet de fenêtre précédent\nVolet précédent"
+	ID_WINDOW_SPLIT         "Fractionne la fenêtre active en volets\nFractionner"
+	ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+	ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+	ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+	ID_EDIT_CUT             "Coupe la sélection et la place dans le Presse-papiers\nCouper"
+	ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+	ID_EDIT_PASTE           "Insère le contenu du presse-papiers\nColler"
+	ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+	ID_EDIT_REPLACE         "Remplace un texte spécifié par un texte différent\nRemplacer"
+	ID_EDIT_SELECT_ALL      "Sélectionne la totalité du document\nSélectionner tout"
+	ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+	ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+	ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nActiver/Désactiver Barre d'outils"
+	ID_VIEW_STATUS_BAR      "Afficher ou masquer la barre d'état\nActiver/désactiver la barre d'état"
+END
+
+STRINGTABLE
+BEGIN
+	AFX_IDS_SCSIZE          "Modifie la taille de la fenêtre"
+	AFX_IDS_SCMOVE          "Modifie la position de la fenêtre"
+	AFX_IDS_SCMINIMIZE      "Affiche la fenêtre sous forme d'icône"
+	AFX_IDS_SCMAXIMIZE      "Affiche la fenêtre en plein écran"
+	AFX_IDS_SCNEXTWINDOW    "Bascule vers la fenêtre de document suivante"
+	AFX_IDS_SCPREVWINDOW    "Bascule vers la fenêtre de document précédente"
+	AFX_IDS_SCCLOSE         "Ferme la fenêtre active et demande si les documents doivent être enregistrés"
+	AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille normale"
+	AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+
+#endif
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Généré à partir de la ressource TEXTINCLUDE 3.
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\\SensorClient.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "l.FRA\\afxres.rc"  	// Composants standard
+#endif
+#endif    // non APSTUDIO_INVOKED

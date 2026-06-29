@@ -15,6 +15,8 @@ Release/
 *.opensdf
 ipch/
 *.aps
+.vs/
+*.ncb
 
 # Fichiers générés par Qt
 moc_*.cpp

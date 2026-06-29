@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorServer", "SensorServer\SensorServer.vcproj", "{0CF94BB4-1B1A-4E07-976A-4680DFAF6650}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorClient", "SensorClient\SensorClient.vcproj", "{AA7D8504-528D-40A5-864B-B061E393802C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CF94BB4-1B1A-4E07-976A-4680DFAF6650}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0CF94BB4-1B1A-4E07-976A-4680DFAF6650}.Debug|Win32.Build.0 = Debug|Win32
+		{0CF94BB4-1B1A-4E07-976A-4680DFAF6650}.Release|Win32.ActiveCfg = Release|Win32
+		{0CF94BB4-1B1A-4E07-976A-4680DFAF6650}.Release|Win32.Build.0 = Release|Win32
+		{AA7D8504-528D-40A5-864B-B061E393802C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA7D8504-528D-40A5-864B-B061E393802C}.Debug|Win32.Build.0 = Debug|Win32
+		{AA7D8504-528D-40A5-864B-B061E393802C}.Release|Win32.ActiveCfg = Release|Win32
+		{AA7D8504-528D-40A5-864B-B061E393802C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
